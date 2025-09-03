@@ -1,0 +1,301 @@
+/*CSS BY NOUR SBETA
+
+/*IMPORTED FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*ROOT VARIABLES*/
+:root {
+    --teal :#4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink:#D9526F;
+    --dark-gray:#1E1E1E; 
+    --white:#ffffff; 
+}
+
+/* Global styles (mobile first / small)  (review) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter';
+  background-color: var(--lavender);
+  display: flex;
+  justify-content: center;
+  color: var(--dark-gray);
+}
+
+.container {
+  width: 360px;
+  background: var(--purple);
+}
+
+/* TYPOGRAPHY */
+h1, h2 {
+  font-family: 'Kavoon', cursive;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+nav h2 {
+  font-size: 1.5em;
+  font-family: 'Kavoon', cursive;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 15px 10px;
+  color: var(--purple);
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0 15px 10px;
+  color: var(--yellow);
+  font-weight:bold;
+}
+
+h4 {
+  font-size: 1.15em;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+/* HEADER */
+header {
+  background: var(--purple);
+  text-align: center;
+  color: var(--white);
+  padding: 20px;
+}
+
+header p {
+  font-size: 14px;
+  font-style: italic;
+  font-family: 'Inter', sans-serif;
+}
+
+/* MENU */
+.menu {
+  background: var(--yellow);
+  text-align: center;
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+
+.menu p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+.menu a {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  background: var(--white);
+  color: var(--purple);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu h2{
+    font-family: 'Inter';
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+/* SERVICE CARDS */
+.card {
+  background: var(--white);
+  border-radius: 8px;
+  margin: 10px 15px;
+  padding: 15px;
+  display: block;
+  gap: 10px;
+}
+
+.card h4{
+    color:var(--purple);
+}
+
+.card span {
+  font-size: 26px;
+  color: var(--teal);
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#services h2{
+    color:var(--white);
+}
+
+/* WHY CHOOSE US */
+.why {
+  background: var(--pink);
+  color: var(--white);
+  padding: 15px;
+}
+.why h2 {
+  color: var(--white);
+  margin: 0 0 10px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 10fr 10fr;
+  gap: 10px;
+}
+
+.why-item1{
+    background: var(--teal);
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.why-item2{
+    background: var(--purple);
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.why-item3{
+    background: var(--yellow);
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.why-item4{
+    background: var(--white);
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* PRICING */
+.pricing {
+  background: var(--purple);
+  color: var(--white);
+  padding: 15px;
+}
+
+.pricing h2 {
+  color: var(--white);
+}
+
+.pricing h4{
+    color: var(--yellow);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 20px;
+}
+
+table, th, td {
+  border: 1px solid var(--white);
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: var(--yellow);
+  color: var(--dark-gray);
+}
+
+td {
+  background: var(--white);
+  color: var(--dark-gray);
+}
+
+/* CALL TO ACTION */
+.cta {
+  background: var(--pink);
+  color: var(--white);
+  text-align: left;
+  padding: 20px;
+}
+
+.cta h2{
+    color: var(--white);
+}
+
+.cta button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: var(--white);
+  color: var(--dark-gray);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  column-span: all;
+}
+
+/* FOOTER */
+footer {
+  background: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
